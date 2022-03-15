@@ -1,0 +1,368 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+html {
+  height: 100%;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    /* background: #F9ECDC;   */
+    background-color: white;
+    font-family: Verdana, Geneva, sans-serif; 
+}
+
+
+
+/*Nav Bar Styling*/
+
+#main {
+    position: relative;
+      }
+
+
+
+.container-fluid {
+    
+    background-color: #93CADF;
+   
+    
+}
+
+a.navbar-brand {
+    
+    font-size: 3.5rem;
+}
+
+.navbar-nav>li>a {
+  font-size: 1.7rem;
+}
+
+
+
+/*Home Page Image */
+.container {
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /*Header Code*/
+  div.center {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+  .center > h1 {
+    font-family: 'Expletus Sans', cursive;
+      font-size: 7vw;
+      font-weight: 800;
+      letter-spacing: 4.5rem;
+  }
+
+  .center > p {
+      font-size: 1.5vw;
+      letter-spacing: .5rem;
+  }
+  
+   .bgimg { 
+    width: 100%;
+    max-height: 800px;
+    min-height: 300px;
+  } 
+
+  @media screen and (max-width: 1178px) {
+    div.center {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .center > h1 {
+      font-family: 'Expletus Sans', cursive;
+        font-size: 7vw;
+        font-weight: 800;
+        letter-spacing: 2rem;
+        
+    }
+  }
+
+
+
+
+  img {
+    display: block;
+    border: 0; 
+    width: 100%;
+    max-height: 800px;
+    min-height: 360px;
+      height: auto;
+  }
+
+  /*About Company*/
+#aboutcompany .container-fluid {
+  padding: 100px 70px 65px 90px;
+  background-color: #f3f3f3;
+  
+}
+
+
+#about h1 {
+  font-family: 'Expletus Sans', cursive;
+  font-size: 5vw;
+  margin-top: 0px;
+}
+
+#about h2 {
+  font-family: 'Expletus Sans', cursive;
+  font-size: 1.8vw;
+}
+
+#about p {
+  font-family: 'Expletus Sans', cursive;
+  font-size: 1.4vw;
+}
+
+#about h3 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 3vw;
+}
+
+
+@media screen and (max-width: 1178px) {
+  #aboutcompany .container-fluid {
+    padding: 20px 0px;
+}
+}
+
+/*Services*/
+#services h1 {
+  text-align: center;
+  font-family: 'Expletus Sans', cursive;
+  font-size: 7rem;
+  margin-top: 8rem ;
+  color:darkslateblue;
+  letter-spacing: .2rem;
+}
+
+.cards {
+  background-color: dodgerblue;
+}
+
+
+  /*Card Styling*/
+   .cards {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .cards a {
+    display: block;
+  }
+
+  .card > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .caption {
+    padding: 1em;
+    color: black;
+    font-size: 1.7em;
+    font-family: 'Expletus Sans', cursive;
+    align-items: center;
+    justify-content: center;
+    
+  } 
+
+  .caption-title {
+    font-size: 3rem;
+  }
+
+
+ /*Cards Grid Layout*/
+  @supports (grid-area: auto) {
+
+    @media screen and (min-width: 30em) {
+
+      .cards {
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+      }
+
+      .cards a {
+        margin-bottom: 0;
+      }
+      .card {
+        display: grid;
+      }
+
+      .card-img,
+      .caption {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .caption {
+        display: flex;
+        align-items: flex-end ;
+      }
+    }
+
+    @media screen and (min-width: 60em) {
+      .cards {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+    }
+ } 
+
+  /*Review Section and Quote Carousel*/
+
+  #reviews {
+    margin: 5em 0;
+
+  }
+  #reviews h2 {
+    text-align: center;
+    font-family: 'Expletus Sans', cursive;
+    font-size: 5rem;
+  }
+
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: red;
+  }
+  
+  .carousel-indicators li {
+    border-color: #0866C4;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: #0866C4;
+  }
+  
+  .item h4 {
+    font-size: 1.5vw;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 2em 5.5em;
+  }
+  
+  .item span {
+    font-style: normal;
+  }
+
+  /*Contact*/ 
+  #contact {
+    max-height: 350px;
+    background-color: #1B263B;
+  }
+
+  .containerb {
+    display: grid;  
+  }
+
+  .button {
+    text-align: center;
+    margin: auto;
+    margin-top: 4rem;
+    max-width: 50rem;
+    min-width: 25rem;
+    border-radius: 10rem;
+    background-color: #0866C4;
+  }
+
+  #planning {
+    font-size: 5rem;
+    margin: auto;
+	  padding: 0px;
+  	text-transform: uppercase;
+    color: #FFF;
+  }
+
+  #planning a {
+    color: white;
+  }
+
+   #address {
+     margin-bottom: 0;
+     line-height: 1.3;
+   }
+
+    #address p {
+      text-align: center;
+      font-family: 'Expletus Sans', cursive;
+      font-size: 1vw;
+      color: white;
+    }
+
+    @media screen and (max-width: 683px) {
+      #contact {
+        height: 200px;
+      }
+      
+      .button {
+        text-align: center;
+        margin: auto;
+        margin-top: 4rem;
+        max-width: 20rem;
+        border-radius: 10rem;
+        background-color: #0866C4;
+      }
+    
+      #planning {
+        font-size: 2rem;
+        margin: auto;
+        padding: 0px;
+        text-transform: uppercase;
+        color: #FFF;
+      }
+    }
+
+    /* Social Media Icon Styling */
+    
+    .containerb {
+      display: grid;  
+    }
+  
+    #social {
+      text-align: center;
+      margin: auto;
+    }
+    
+    .fa {
+      
+      padding: 15px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #ea4c89;
+      color: white;
+    }
+
+
+   

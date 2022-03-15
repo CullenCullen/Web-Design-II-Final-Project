@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Noto+Serif+JP:wght@500&display=swap');
+
+/*border box fix*/
+html {
+  box-sizing: border-box;
+}
+
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F9ECDC;
+    font-family: Verdana, Geneva, sans-serif; 
+}
+/*Nav Bar Styling*/
+.container-fluid {
+    
+    background-color: #93CADF;
+}
+
+.navbar-brand {
+    
+    font-size: 2em;
+}
+
+
+
+/*Reviews Section*/
+
+#reviews {
+    padding: 80px 70px 20px 70px;
+    background-color: #f3f3f3;
+}
+#rcorners {
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px; 
+    max-width: 900px;
+    max-height: 599px;  
+    font-size: 5vw;
+    margin-top: .7em;
+  }
+
+  #rcorners p {
+      font-size: 3vw;
+  }
+
+
+/*Block Quotes*/
+
+  #reviews blockquote {
+      margin-top: 20px;
+      font-size: 1.5vw;
+  }
+
+  .blockquote {
+    padding: 40px 80px 15px;
+    position: relative;
+}
+  .blockquote p {
+    
+    font-size: 1.4vw;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+
+
+
+cite {
+    text-align: center;
+}
+
+
+
+/*Fills Bootstrap Container */
+.container {
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+
+  img { 
+    width: 100%;
+    max-height: 400px;
+    min-height: auto;
+    
+  }
+
+
+  /*footer*/
+
+  h2.text-center{
+    font-size: 2vw;
+  }
+
+ footer {
+      position: relative;
+      height: 3rem;
+      width: 100%;
+      background-color: #AB410D;
+  }
+
+  #address p {
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  p.copyright {
+      position: absolute;
+      width: 100%;
+      color: #fff;
+      line-height: 40px;
+      font-size: 0.7em;
+      text-align: center;
+      
+  }
+
+
+
+
+
