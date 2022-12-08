@@ -1,6 +1,6 @@
 # Web-Design-II-Final-Project
-ITD 210 Final Project Portfolio
-Website Overview
+#ITD 210 Final Project Portfolio
+#Website Overview
 This is a website created for local travel business owner Courtney Harding. The site aims to promote her business, L’Escape travel, and gain customer trust and confidence.  Courtney wanted the site to place emphasis on her passion for travel and convey professionalism to her clients. It should be distinct from her competitor site, lescapetravel.com. She has provided text excerpts for the different site pages. She has also provided a PDF form for clients to fill out. For my site, instead of using the PDF, I included a Google Forms page that I thought would be more accessible to potential clients. Images on the site came from Courtney and various artists from the website “Unsplash.com.” 
 Some client requests were creating a “Meet Courtney” and “Covid-19” page that are separate from the homepage. The webpage also includes services provided by her agency, a start planning button, and customer reviews from Facebook.  All pages on the website are responsive across multiple device types.
 Design Description
